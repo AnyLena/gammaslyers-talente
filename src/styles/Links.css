@@ -1,0 +1,21 @@
+.links-container { 
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 6px;
+    margin: 5px 30px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: black;
+    padding: 2px 5px
+}
+
+.links-container a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #c6c6c6;;  
+}
