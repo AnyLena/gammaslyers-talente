@@ -17,7 +17,6 @@ const Menus = ({ setKlasse, setLevel, klasse}) => {
 
   return (
     <div>
-      {/* <button className="klasse-btn" onClick={() => setIsOpen(!isOpen)}>Klasse auswählen</button> */}
       <div className="menu-container">
         {!isOpen && <div className="chosen-klasse" onClick={() => setIsOpen(!isOpen)}>
                   Klasse: {klasseAnz} <span className="arrow">{`<`}</span>

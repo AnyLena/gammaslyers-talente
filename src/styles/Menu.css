@@ -1,83 +1,94 @@
 .menu-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 30px;
 }
 
 .klasse-btn {
-    font-size: 25px;
-    background-color: #c6c6c6;
-    padding: 4px;
-    margin: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 38px;
+  font-size: 25px;
+  background-color: #c6c6c6;
+  padding: 4px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
 }
 
-.klassen-container p, .chosen-klasse {
-    font-family: "Londrina Solid", sans-serif;
-    font-size: 25px;
-    background-color: #c6c6c6;
-    padding: 4px;
-    margin: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 38px;
+.klassen-container p,
+.chosen-klasse {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 25px;
+  background-color: #c6c6c6;
+  padding: 4px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 38px;
 }
 
 .arrow {
-    font-family: "Londrina Solid", sans-serif;
-    rotate: -90deg;
+  font-family: "Londrina Solid", sans-serif;
+  rotate: -90deg;
 }
 
 .arrow:hover {
-color: white;
-text-shadow: 0px 0px 10px black;
-
+  color: white;
+  text-shadow: 0px 0px 10px black;
 }
 
 .chosen-klasse:hover {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .choose-klasse {
-    list-style: none;
-    padding: 4px;
+  list-style: none;
+  padding: 4px;
 }
 
 .choose-klasse:hover {
-    background-color: #c6c6c6;;
-    cursor: pointer;
+  background-color: #c6c6c6;
+  cursor: pointer;
 }
 
 .levelAnz-container {
-    background-color: white;
-    height: 38px;
-    font-family: "Londrina Solid", sans-serif;
-    font-size: 25px;
-    background-color: #c6c6c6;
-    padding: 4px;
-    margin: 15px 0;
+  background-color: white;
+  height: 38px;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 25px;
+  background-color: #c6c6c6;
+  padding: 4px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.levelAnz-container label {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 25px;
+}
+
+.levelAnz-container input {
+  width: 45px;
+  height: 30px;
+  padding: 2px 10px;
+  font-size: 20px;
+  font-family: "Londrina Solid", sans-serif;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+    flex-direction: column;
+  }
 
-.levelAnz-container label{
-    font-family: "Londrina Solid", sans-serif;
-    font-size: 25px;
-}
-
-.levelAnz-container input{
-    width: 45px;
-    height: 30px;
-    padding: 2px 10px;
-    font-size: 20px;
-    font-family: "Londrina Solid", sans-serif;
-    border: none;    
+  .chosen-klasse {
+    margin-bottom: 0px;
+  }
 }
