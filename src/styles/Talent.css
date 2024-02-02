@@ -12,13 +12,16 @@ h3 {
     padding: 15px 0 8px 0;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 .talent-container {
-    flex-grow: 1;
-    width: 400px;
+    flex: 1 0 300px;
     padding: 20px 25px;
     border-radius: 3px;
     text-align: justify;
-
 }
 
 .talent-container h2 {

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.para-talent h2 {
+  text-transform: uppercase;
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 30px;
+}
+
+.para-container--all {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.para-talent {
+  flex: 1 0 300px;
+  margin: 25px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.para-werte {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  margin: 20px 0;
+}
+
+.para-bez {
+  font-weight: bold;
+}

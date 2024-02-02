@@ -1,22 +1,25 @@
 import { useState, useEffect } from "react";
 import "./styles/App.css";
-import { data } from "./data.js";
-import Talente from "./components/Talente.jsx";
-import Menus from "./components/Menus.jsx";
-import Links from "./components/Links.jsx";
+import { data } from "../data/talents.js";
+import TalentList from "./views/TalentList.jsx";
+import Navigation from "./components/Navigation.jsx";
+import { Routes, Route } from "react-router-dom";
+import Telekinet from "./views/Telekinet";
 
 function App() {
   const [talents, setTalents] = useState();
-  const [filteredTalents,setFilteredTalents] = useState();
+  const [filteredTalents, setFilteredTalents] = useState();
   const [klasse, setKlasse] = useState();
   const [level, setLevel] = useState(1);
 
   const filterTalents = () => {
     if (klasse) {
-      const filter = talents.filter( talent => talent.level[klasse] && talent.level[klasse] <= level)
-      setFilteredTalents(filter)  
-    } 
-  }
+      const filter = talents.filter(
+        (talent) => talent.level[klasse] && talent.level[klasse] <= level
+      );
+      setFilteredTalents(filter);
+    }
+  };
 
   useEffect(() => {
     setTalents(data.talente);
@@ -24,16 +27,29 @@ function App() {
 
   useEffect(() => {
     filterTalents();
-    console.log(filteredTalents)
-  }, [klasse,level]);
-
+  }, [klasse, level]);
 
   return (
     <>
-      <h1>Gammaslayers Talente</h1>
-      <Menus setKlasse={setKlasse} setLevel={setLevel} klasse={klasse}/>
-      <Links talents={filteredTalents}/>
-      <Talente talents={filteredTalents}/>
+      <Navigation />
+      <Routes>
+        <Route
+          path="/talente"
+          element={
+            <TalentList
+              setKlasse={setKlasse}
+              setLevel={setLevel}
+              klasse={klasse}
+              filteredTalents={filteredTalents}
+              level={level}
+            />
+          }
+        />
+         <Route
+          path="/telekinet"
+          element={<Telekinet/>}
+        />
+      </Routes>
     </>
   );
 }
