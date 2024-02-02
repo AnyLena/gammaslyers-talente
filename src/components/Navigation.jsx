@@ -46,8 +46,8 @@ const Navigation = () => {
           >
             Telekinese
           </NavLink>
-          {/* <NavLink to="/technomant" onClick={!isLargeScreen ? handleClick : undefined}>Technomant:in</NavLink>
-        <NavLink to="/telepath" onClick={!isLargeScreen ? handleClick : undefined}>Telepath:in</NavLink> */}
+          <NavLink to="/technomantie" onClick={!isLargeScreen ? handleClick : undefined}>Technomantie</NavLink>
+        {/* <NavLink to="/telepathie" onClick={!isLargeScreen ? handleClick : undefined}>Telepathie</NavLink> */}
         </div>
       )}
     </nav>
