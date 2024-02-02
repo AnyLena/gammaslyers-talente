@@ -26,7 +26,7 @@ const Menus = ({ setKlasse, setLevel, klasse}) => {
             <div className="klassen-container">
 
               <ul>
-                <p>Heldenklassen</p>
+                <p>Klassen</p>
                 <li className="choose-klasse" id="KAM" onClick={handleClick}>
                   Kämpfer (KAM)
                 </li>
