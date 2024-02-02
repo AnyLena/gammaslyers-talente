@@ -11,12 +11,10 @@ const Technomantie = () => {
 
   useEffect(() => {
     setParas(data.technomantie);
-    console.log(paras);
     setLevelPara(1);
   }, []);
 
   useEffect(() => {
-    console.log(levelPara);
     const filter = paras.filter((para) => para.stufe <= levelPara);
     setFilteredParas(filter);
     console.log(filteredParas);
