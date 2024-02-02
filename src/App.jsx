@@ -5,6 +5,7 @@ import TalentList from "./views/TalentList.jsx";
 import Navigation from "./components/Navigation.jsx";
 import { Routes, Route } from "react-router-dom";
 import Telekinese from "./views/Telekinese.jsx";
+import Technomantie from "./views/Technomantie.jsx";
 
 function App() {
   const [talents, setTalents] = useState();
@@ -48,6 +49,10 @@ function App() {
          <Route
           path="/telekinese"
           element={<Telekinese/>}
+        />
+        <Route
+          path="/technomantie"
+          element={<Technomantie/>}
         />
       </Routes>
     </>
