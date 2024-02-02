@@ -3,48 +3,40 @@
   background: #c6c6c6;
 }
 
-#hamitems {
-  display: flex;
-}
 #hamitems a {
-  flex-grow: 1;
-  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #333;
+  text-decoration: none;
   padding: 10px;
   color: #222;
-  text-decoration: none;
   text-align: center;
 }
+
+#hamnav button {
+  display: inline-block;
+  color: black;
+  background: #c6c6c6;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 6px 100px;
+  border: none;
+}
+
 #hamitems a:hover {
   background: #222;
   color: white;
 }
 
-#hamnav label,
-#hamburger {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  #hamitems a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #333;
-  }
-
-  #hamnav label {
-    display: inline-block;
-    color: black;
-    background: #c6c6c6;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px 100px;
-  }
-
+@media screen and (min-width: 600px) {
   #hamitems {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 0;
   }
-  #hamnav input:checked ~ #hamitems {
-    display: block;
+  #hamnav button {
+    display: none;
   }
 }
