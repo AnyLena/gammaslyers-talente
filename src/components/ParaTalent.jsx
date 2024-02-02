@@ -3,7 +3,7 @@ import "../styles/ParaTalent.css";
 const ParaTalent = ({ para }) => {
   return (
     <>
-      <div className="para-talent">
+      <div id={para.name} className="para-talent">
         <h2>{para.name}</h2>
         <div className="para-werte">
           <p className="para-bez">Stufe</p>

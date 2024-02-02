@@ -1,10 +1,10 @@
 import "../styles/Links.css";
 
-const Links = ({talents}) => {
+const Links = ({links}) => {
     return ( <>
     <div className="links-container">
-    {talents && talents.map((talent,index)=> (
-        <div key={index}><a href={`#${talent.name}`}>{talent.name}</a></div>
+    {links && links.map((link,index)=> (
+        <div key={index}><a href={`#${link.name}`}>{link.name}</a></div>
     ))}
     </div>
     

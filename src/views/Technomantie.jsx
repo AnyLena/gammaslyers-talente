@@ -3,6 +3,7 @@ import { data } from "../../data/parafaehigkeiten";
 import { useState, useEffect } from "react";
 import "../styles/ParaTalent.css";
 import ParaMenu from "../components/ParaMenu";
+import Links from "../components/Links";
 
 const Technomantie = () => {
   const [paras, setParas] = useState([]);
@@ -22,8 +23,10 @@ const Technomantie = () => {
 
   return (
     <>
+    <div className="main-section">
       <h1>Technomantie</h1>
-      <p>{filteredParas.length} Parafähigkeiten</p>
+      <p>In Level {levelPara} sind {filteredParas.length} Parafähigkeiten von insgesamt {paras.length} verfügbar.</p>
+      <div className="para-links"><Links links={filteredParas}/></div>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
       <section className="para-container--all">
         {filteredParas &&
@@ -31,6 +34,7 @@ const Technomantie = () => {
             <ParaTalent key={index} para={filteredParas[index]} />
           ))}
       </section>
+      </div>
     </>
   );
 };
