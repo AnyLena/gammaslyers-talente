@@ -4,7 +4,7 @@ import { data } from "../data/talents.js";
 import TalentList from "./views/TalentList.jsx";
 import Navigation from "./components/Navigation.jsx";
 import { Routes, Route } from "react-router-dom";
-import Telekinet from "./views/Telekinet";
+import Telekinese from "./views/Telekinese.jsx";
 
 function App() {
   const [talents, setTalents] = useState();
@@ -46,8 +46,8 @@ function App() {
           }
         />
          <Route
-          path="/telekinet"
-          element={<Telekinet/>}
+          path="/telekinese"
+          element={<Telekinese/>}
         />
       </Routes>
     </>

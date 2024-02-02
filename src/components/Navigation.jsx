@@ -41,10 +41,10 @@ const Navigation = () => {
             Alle Talente
           </NavLink>
           <NavLink
-            to="/telekinet"
+            to="/telekinese"
             onClick={!isLargeScreen ? handleClick : undefined}
           >
-            Telekinet:in
+            Telekinese
           </NavLink>
           {/* <NavLink to="/technomant" onClick={!isLargeScreen ? handleClick : undefined}>Technomant:in</NavLink>
         <NavLink to="/telepath" onClick={!isLargeScreen ? handleClick : undefined}>Telepath:in</NavLink> */}

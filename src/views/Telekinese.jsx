@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import "../styles/ParaTalent.css";
 import ParaMenu from "../components/ParaMenu";
 
-const Telekinet = () => {
+const Telekinese = () => {
   const [paras, setParas] = useState([]);
   const [filteredParas, setFilteredParas] = useState([]);
   const [levelPara, setLevelPara] = useState(0);
 
   useEffect(() => {
-    setParas(data.telekinet);
+    setParas(data.telekinese);
     console.log(paras);
     setLevelPara(1);
   }, []);
@@ -24,7 +24,7 @@ const Telekinet = () => {
 
   return (
     <>
-      <h1>Parafähigkeiten Telekinet:in</h1>
+      <h1>Telekinese</h1>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
       <section className="para-container--all">
         {filteredParas &&
@@ -36,4 +36,4 @@ const Telekinet = () => {
   );
 };
 
-export default Telekinet;
+export default Telekinese;
