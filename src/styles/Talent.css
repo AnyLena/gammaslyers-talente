@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 16px;
+    padding: 15px 0 8px 0;
+}
+
 .talent-container {
     flex-grow: 1;
     width: 400px;
