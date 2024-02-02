@@ -36,9 +36,6 @@ const Menus = ({ setKlasse, setLevel, klasse}) => {
                 <li className="choose-klasse" id="TEC" onClick={handleClick}>
                   Tech (TEC)
                 </li>
-                <li className="choose-klasse" id="PAR" onClick={handleClick}>
-                  Paramental (PAR)
-                </li>
                 <li className="choose-klasse" id="TLP" onClick={handleClick}>
                   Telepath (TLP)
                 </li>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Raleway:wght@300&display=swap');
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,7 +9,7 @@
 }
 
 * {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .container {
