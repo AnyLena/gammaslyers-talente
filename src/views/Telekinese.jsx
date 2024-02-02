@@ -23,6 +23,7 @@ const Telekinese = () => {
   return (
     <>
       <h1>Telekinese</h1>
+      <p>{filteredParas.length} Parafähigkeiten</p>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
       <section className="para-container--all">
         {filteredParas &&

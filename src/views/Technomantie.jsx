@@ -23,6 +23,7 @@ const Technomantie = () => {
   return (
     <>
       <h1>Technomantie</h1>
+      <p>{filteredParas.length} Parafähigkeiten</p>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
       <section className="para-container--all">
         {filteredParas &&

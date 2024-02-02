@@ -23,6 +23,7 @@ const Telepathie = () => {
   return (
     <>
       <h1>Telepathie</h1>
+      <p>{filteredParas.length} Parafähigkeiten</p>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
       <section className="para-container--all">
         {filteredParas &&
