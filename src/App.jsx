@@ -41,6 +41,7 @@ function App() {
               setLevel={setLevel}
               klasse={klasse}
               filteredTalents={filteredTalents}
+              level={level}
             />
           }
         />

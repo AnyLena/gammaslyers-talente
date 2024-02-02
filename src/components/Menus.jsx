@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/Menu.css";
 
-const Menus = ({ setKlasse, setLevel, klasse}) => {
+const Menus = ({ setKlasse, setLevel, klasse, level}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [klasseAnz,setKlasseAnz] = useState('Klasse wählen')
 
@@ -114,6 +114,7 @@ const Menus = ({ setKlasse, setLevel, klasse}) => {
             type="number"
             min="1"
             max="20"
+            defaultValue={level}
           />
         </div>
       </div>
