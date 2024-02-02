@@ -11,6 +11,7 @@ const TalentList = ({
 }) => {
   return (
     <>
+    <section className="main-section">
       <h1>Gammaslayers Talente</h1>
       <Menus
         setKlasse={setKlasse}
@@ -18,8 +19,9 @@ const TalentList = ({
         klasse={klasse}
         level={level}
       />
-      <Links talents={filteredTalents} />
+      <Links links={filteredTalents} />
       <Talente talents={filteredTalents} />
+      </section>
     </>
   );
 };

@@ -5,13 +5,13 @@ import "../styles/ParaTalent.css";
 import ParaMenu from "../components/ParaMenu";
 import Links from "../components/Links";
 
-const Technomantie = () => {
+const Telepathie = () => {
   const [paras, setParas] = useState([]);
   const [filteredParas, setFilteredParas] = useState([]);
   const [levelPara, setLevelPara] = useState(0);
 
   useEffect(() => {
-    setParas(data.technomantie);
+    setParas(data.telepathie);
     setLevelPara(1);
   }, []);
 
@@ -24,7 +24,7 @@ const Technomantie = () => {
   return (
     <>
     <div className="main-section">
-      <h1>Technomantie</h1>
+      <h1>Telepathie</h1>
       <p>In Level {levelPara} sind {filteredParas.length} Parafähigkeiten von insgesamt {paras.length} verfügbar.</p>
       <div className="para-links"><Links links={filteredParas}/></div>
       <ParaMenu levelPara={levelPara} setLevelPara={setLevelPara} />
@@ -39,4 +39,4 @@ const Technomantie = () => {
   );
 };
 
-export default Technomantie;
+export default Telepathie;

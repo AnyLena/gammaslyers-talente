@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation.jsx";
 import { Routes, Route } from "react-router-dom";
 import Telekinese from "./views/Telekinese.jsx";
 import Technomantie from "./views/Technomantie.jsx";
+import Telepathie from "./views/Telepathie.jsx";
 
 function App() {
   const [talents, setTalents] = useState();
@@ -53,6 +54,10 @@ function App() {
         <Route
           path="/technomantie"
           element={<Technomantie/>}
+        />
+        <Route
+          path="/telepathie"
+          element={<Telepathie />}
         />
       </Routes>
     </>

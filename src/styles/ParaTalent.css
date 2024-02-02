@@ -31,3 +31,9 @@
 .para-bez {
   font-weight: bold;
 }
+
+.para-links {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
